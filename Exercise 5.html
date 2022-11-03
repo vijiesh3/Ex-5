@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shop</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=500px initialscale=1.0">
+    <link rel="stylesheet" href="Ex5 style.css">
+    <script>
+        function total() {
+            var c = document.getElementById('cc').value;
+            var b = document.getElementById('bc').value;
+            var d = document.getElementById('mc').value;
+            var e = document.getElementById('bf').value;
+            var sum = c * 300 + b * 200 + d * 250 + e * 350;
+            document.getElementById("box1").innerHTML = "Total Price ₹" + sum;
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1 class="head">CAKE SHOP</h1>
+    </div>
+    <div class="i1">
+        <div class="t1">Color cake-Rs.300</div>
+    </div>
+    <div class="i2">
+        <div class="t2">Brown cake-Rs.200</div>
+    </div>
+    <div class="i3">
+        <div class="t3">Milky cake-Rs.250</div>
+    </div>
+    <div class="i4">
+        <div class="t4">Black Forest cake-Rs.350</div>
+    </div>
+    <div class="text">
+        <h2>Order Cake</h2>
+    </div>
+    <div class="box">
+        <p>Color Cake(Quantity)</p>
+        <input class="b1" type="text" id="cc">
+        <p>Brown Cake(Quantity)</p>
+        <input class="b1" type="text" id="bc">
+        <p>Milky Cake(Quantity)</p>
+        <input class="b1" type="text" id="mc">
+        <p>Black Forest Cake(Quantity)</p>
+        <input class="b1" type="text" id="bf">
+    </div>
+    <div class="bt2" id="tot">
+        <button class="button" type="button" onclick="total()">Place Order</button>
+    </div>
+    <center>
+        <div class="line"></div>
+    </center>
+    <center>
+        <div class="text1">Purchase Order Bill !!!</div>
+    </center>
+    <div class="total" id="box1" style="color: rgb(240, 247, 240); background-color: rgb(5,
+167, 5); "></div>
+</body>
+
+</html>
